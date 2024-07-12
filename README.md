@@ -1,3 +1,7 @@
+Dictionary app get word definition from remote if there is internet connection get from local database if found
+add unit test for the database 
+add unit test for the view model
+
 ![search6](https://github.com/user-attachments/assets/506fe860-ee9a-4b2c-ba8a-8ecb4bcf8859)
 ![search5](https://github.com/user-attachments/assets/daac5e2c-a79e-4f14-a5ca-e1e922975149)
 ![search4](https://github.com/user-attachments/assets/d6b243f3-40f9-463b-b617-2e215508c734)
