@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DictionaryApplication</string>
+    <string name="splash_screen_image">Splash Screen Image Content Description</string>
+    <string name="search_place_holder">Search...</string>
+    <string name="submit_btn_text">Submit</string>
+    <string name="clear_btn_text">Clear</string>
+    <string name="splash">Dictionary App</string>
+    <string name="splash_icon_contnet_description">Splash Icon</string>
+</resources>
