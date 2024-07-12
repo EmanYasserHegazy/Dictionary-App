@@ -1,4 +1,5 @@
-Dictionary app get word definition from remote if there is internet connection get from local database if found
+**Dictionary app** 
+get word definition from remote if there is internet connection get from local database if found /n
 add unit test for the database 
 add unit test for the view model
 
