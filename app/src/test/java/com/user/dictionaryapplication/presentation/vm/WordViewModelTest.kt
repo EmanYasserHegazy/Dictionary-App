@@ -10,9 +10,9 @@ import io.mockk.clearAllMocks
 import io.mockk.coEvery
 import io.mockk.mockk
 import io.mockk.verify
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
 import org.junit.After
@@ -26,15 +26,14 @@ class WordViewModelTest {
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
 
-    private val testDispatcher = TestCoroutineDispatcher()
-
     private lateinit var viewModel: WordViewModel
     private lateinit var dictionaryUseCase: WordDefinitionUseCase
     private lateinit var previousSearchListUseCase: PreviousWordListUseCase
+    private val coroutineDispatcher: CoroutineDispatcher = Dispatchers.Unconfined
 
     @Before
     fun setUp() {
-        Dispatchers.setMain(testDispatcher)
+        Dispatchers.setMain(coroutineDispatcher)
         dictionaryUseCase = mockk()
         previousSearchListUseCase = mockk()
         viewModel = WordViewModel(dictionaryUseCase, previousSearchListUseCase)
